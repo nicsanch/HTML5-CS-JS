@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "The Led Display St";
+    src: url("https://fonts.cdnfonts.com/css/the-led-display-st");
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+#calculadora{
+    background-color: lightslategray;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px black;
+}
+
+#calculadora::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: -28px;
+    margin-top: 29px;
+    z-index: -1;
+}
+
+#calculadora::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 460px;
+    margin-top: -20px;
+    z-index: -1;
+}
+
+#calculadora > .pantalla{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 70px;
+    font-family: "The Led Display St";
+    color: green;
+}
+
+#calculadora > .pantalla > [pantalla-pequeña] {
+    font-size: 50px;
+}
+
+#calculadora > .botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#calculadora > .botones > button{
+    padding: 10px;
+    background-color: lightgray;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#calculadora > .botones > button:nth-child(2){
+    grid-column: span 2;
+}
+
+#calculadora > .botones > button:last-child{
+    grid-column: span 2;
+    background-color: rgb(44, 179, 40);
+}
+
+#calculadora > .botones > button[data-operation] {
+    background-color: rgb(39, 137, 183);
+}
+
+#calculadora > .botones > button[data-del] {
+    background-color: rgb(228, 151, 28);
+}
+
+#calculadora > .botones > button[data-clear] {
+    background-color: rgb(216, 97, 76);
+}
+
+#calculadora > .botones > button:nth-child(16){
+    background-color: rgb(222, 213, 113);
+}
