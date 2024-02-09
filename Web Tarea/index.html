@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/estilos.css" rel="stylesheet">
+    <title>La atmósfera terrestre</title>
+</head>
+<body>
+    <header>
+        <h2>La atmósfera terrestre</h2>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <div id="central">
+        <h1>La atmósfera y su composición</h1>
+        <p>La atmósfera es la capa de aire que envuelve la Tierra. Su esperor es de 1000 kilómetros y en ella se distinguen varias capas</p>
+    </div>
+
+    <main>
+        <div id="lateral">
+            <h3>Capas de la atmósfera</h3>
+            <ul>
+                <li>Troposfera</li>
+                <li>Estratosfera</li>
+                <li>Capas exteriores</li>
+            </ul>
+            <table>
+                <tr>
+
+                    <th>
+                        Capa
+                    </th>
+                    <th>
+                        Altura
+                    </th>                  
+                </tr>
+                <tr>
+                    <td>Troposfera</td>
+                    <td>hasta 12km</td>                    
+                </tr>
+                <tr>
+                    <td>Estratosfera</td>
+                    <td>entre 12 y 50km</td>                    
+                </tr>
+                <tr>
+                    <td>Mesoesfera</td>
+                    <td>entre 50 y 85km</td>                    
+                </tr>
+                <tr>
+                    <td>Termoesfera</td>
+                    <td>entre 80 y 500km</td>                    
+                </tr>
+                <tr>
+                    <td>Exosfera</td>
+                    <td>a partir 500km</td>                    
+                </tr>
+            </table>
+            <br>
+            <img id="esquema" src="assets/img/atmosphere.jpg" alt="Imagen lateral">
+        </div>
+        <div id="central-content">
+            <div id ="intro">
+                <h2>Atmósfera</h2>
+                <p>La atmósfera terrestre es la parte gaseosa de la Tierra, siendo por esto la capa más externa y menos densa del planeta. Está constituida por varios gases que varían en cantidad según la presión a diversas alturas. Esta mezcla de gases que forma la atmósfera recibe genéricamente el nombre de aire.</p>
+                <br>
+            </div>
+            <div id="Actividades">
+                <form action="/action_page.php">
+                    <label for="respuesta1">¿Cuál es la capa más cercana a la supericie terrestre?</label>
+                    <input type="text" id="respuesta1" name="respuesta1" placeholder="Tu respuesta...">   <br>       
+                    <label for="respuesta2">¿Y la más lejana?</label>
+                    <input type="text" id="respuesta2" name="respuesta2" placeholder="Tu respuesta...">  <br>               
+                    <label for="respuesta3">¿Dónde se encuentra la capa de ozono?</label>
+                    <select id="respuesta3" name="respuesta3">
+                        <option value="" disabled selected>Selecciona una respuesta</option>
+                        <option value="troposfera">Troposfera</option>
+                        <option value="estratosfera">Estratosfera</option>
+                        <option value="mesoesfera">Mesoesfera</option>
+                        <option value="termoesfera">Termoesfera</option>
+                        <option value="exosfera">Exosfera</option>
+                    </select>
+                    <br><label for="respuesta4">¿Se puede respirar en capas exteriores?</label><br>
+                    <textarea id="respuesta4" name="respuesta4" placeholder="Escribe aquí tu opinión..." style="width:100%"></textarea> <br>           
+                    <input id="boton" type="submit" value="Envía tu respuesta"><br>
+                  </form>
+                  <br>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Nicolás Sánchez Pérez
+    </footer>
+</body>
+</html>
